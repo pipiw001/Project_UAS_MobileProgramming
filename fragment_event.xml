@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Banner Lebar di Atas -->
+        <ImageView
+            android:id="@+id/detail_banner"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background"
+            android:contentDescription="Banner Artikel"/>
+
+        <!-- Konten Detail -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Judul Artikel -->
+            <TextView
+                android:id="@+id/detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Judul Artikel"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <!-- Sub Text -->
+            <TextView
+                android:id="@+id/detail_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Subjudul artikel"
+                android:textSize="16sp"
+                android:textColor="@android:color/darker_gray"/>
+
+            <!-- Garis Pembatas -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/darker_gray"/>
+
+            <!-- Body Text -->
+            <TextView
+                android:id="@+id/detail_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Isi konten artikel akan ditampilkan di sini..."
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:lineSpacingExtra="4dp"/>
+
+            <!-- Spacer -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="24dp"/>
+
+            <!-- Button Pendaftaran -->
+            <Button
+                android:id="@+id/register_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="DAFTAR SEKARANG"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/colorPrimary"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:drawableStart="@drawable/ic_register"
+                android:drawablePadding="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
